@@ -1,7 +1,12 @@
+import { View } from "react-native";
 import MovieContainer from "../containers/MovieContainer";
+import Tab from "../../components/layout/Tab";
+import MyTabs from "../../components/layout/Tab";
 
 const IndexScreen = ({ navigation }) => (
-    <MovieContainer navigation={navigation} />
+    <View>
+        <MovieContainer navigation={navigation} />
+    </View>
 );
 
 export default IndexScreen;

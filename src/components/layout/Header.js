@@ -1,4 +1,8 @@
-import { Box, HStack, StatusBar, Text } from "native-base";
+import { Box, HStack, StatusBar, Text, View } from "native-base";
+import { createNativeStackNavigator } from "@react-navigation/native-stack";
+import Tab from "./Tab";
+
+const Stack = createNativeStackNavigator();
 
 const Header = () => {
     return (

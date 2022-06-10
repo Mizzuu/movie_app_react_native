@@ -1,21 +1,17 @@
-import { StatusBar } from "expo-status-bar";
 import {
-    Text,
-    HStack,
     Box,
+    Button,
+    Center,
     Divider,
     Heading,
     Image,
+    Text,
     VStack,
-    Button,
 } from "native-base";
-import { View, StyleSheet } from "react-native";
-import MovieDetails from "./MovieDetails";
 
-const Movies = (props) => {
+const ResultsCard = (props) => {
     const { imgSrc, title, popularity, release_date, navigation, overview } =
         props;
-
     return (
         <Box borderWidth={1} borderRadius="md" pb={5} mb={10}>
             <HStack space={4} divider={<Divider />}>
@@ -47,13 +43,4 @@ const Movies = (props) => {
     );
 };
 
-export default Movies;
-
-const styles = StyleSheet.create({
-    container: {
-        flex: 1,
-        backgroundColor: "#fff",
-        alignItems: "center",
-        justifyContent: "center",
-    },
-});
+export default ResultsCard;
